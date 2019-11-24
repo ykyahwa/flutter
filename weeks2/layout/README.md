@@ -383,7 +383,7 @@ Widget _buildCard() => SizedBox(
 - Step 4 : Implement the text section
 - Step 5 : Implement the image section
 
-**Sample : main.dart**
+*Sample : main.dart*
 
 
 
@@ -404,13 +404,14 @@ Widget _buildCard() => SizedBox(
   - StatefulWidget을 상속
   - Checkbox, Radio, Slider, InkWell, Form, TextField
 
-
 ### Stateful widget
 
 - StatefulWidget의 서브 클래스와 State의 서브 클래스의 두 클래스로 구현됩니다.
 - 위젯의 상태는 State 에 저장된다.
 - 상태 클래스에는 위젯의 변경 가능한 상태와 위젯의 build () 메소드가 포함됩니다.
 - 위젯의 상태가 변경되면 상태 객체는 setState ()를 호출하여 프레임 워크에 위젯을 다시 그리도록 지시합니다.
+
+*Sample : main2.dart*
 
 
 ### Managing state
@@ -423,6 +424,12 @@ Widget _buildCard() => SizedBox(
 
 - 위젯이 상태 관리
   - setState() 호출하여 update UI
-
+  
 - 위젯 부모가 상태 관리
+  - StatelessWidget 을 확장, 부모에서 상태 관리
+  - 탭이 감지되면 부모에게 전달
+  - 부모가 setState
 - 위젯, 부모 관리
+  - 상태를 stateful widget, Parent 에서 관리
+
+- *Sample : main3.dart* 
